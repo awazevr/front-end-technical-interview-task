@@ -1,9 +1,8 @@
-
 # Awaze Front-End Interview Project
 
 ## Overview
 
-Welcome to the Awaze Front-End coding exercise! This project is a small-scale application that demonstrates how to integrate a React front end with a simple Node/Express API. The goal is to allow users to search for locations and display matching results, with a few extra conditions to test your front-end skills.
+Welcome to the Awaze Front-End Coding exercise! This project is a small-scale application designed to mimic real-world coding scenarios you might encounter in your day-to-day development. Your goal is to build a user interface that allows users to search for locations and display matching results, while handling additional requirements that test your front-end skills in a practical and realistic context.
 
 ### Project Structure
 
@@ -21,8 +20,9 @@ Welcome to the Awaze Front-End coding exercise! This project is a small-scale ap
 ```
 
 - **server/**: Contains a basic Node/Express backend that serves the `/api/location` endpoint. This folder is off-limits for coding changes. It emulates real-world scenarios by randomly:
-    - Returning HTTP 500 errors.
-    - Introducing slow response times.
+
+  - Returning HTTP 500 errors.
+  - Introducing slow response times.
 
 - **client/**: Contains the React front end. This is where you will make all necessary changes to fulfill the requirements.
 
@@ -30,15 +30,17 @@ Welcome to the Awaze Front-End coding exercise! This project is a small-scale ap
 
 ## Brief
 
-Awaze has acquired another travel company called **GlobalEscapes**. We have been asked to build a **basic site** allowing users to search for locations with the following features:
+We’ve recently acquired a global holiday company called **GlobalEscapes**, renowned for its unique, off-the-beaten-track travel experiences. To support this acquisition, we’ve been tasked with building a basic website that allows users to search for locations by integrating with a third-party `Location API.
+
+While the project involves integrating with a third-party Location API, this API will be mimicked by the server code located in the `/server` folder, simulating realistic behaviors such as delayed responses and error scenarios for testing and development purposes.
+
+This project aims to deliver the following features:
 
 1. **Free Text Search Input**  
-   A text input where the user can type a location. As the user types, a drop down list of available locations should be displayed. 
+   A text input where the user can type a location. As the user types, a drop down list of available locations should be displayed.
 
 2. **Delayed API Calls**  
-   We only call the server’s `/api/location` endpoint **after** the user has typed **three or more characters**.  
-   On the **3rd keypress** (and beyond), the front end should send the current term as a query parameter to the server:  
-   `GET /api/location?term=<userInput>`
+   The location API should only be queried **after** the user has typed **three or more characters**. On from the **3rd keypress** (and beyond), the front end will send the current search term as a query parameter to the server: `GET /api/location?term=<userInput>`
 
 3. **Filtered Results**  
    The server returns matching locations based on your `term`.  
@@ -48,13 +50,11 @@ Awaze has acquired another travel company called **GlobalEscapes**. We have been
    The front end must **remove any duplicate** locations before displaying them.
 
 5. **Display a Drop-Down**  
-   As the user continues typing, a drop-down (or list) of matching locations appears.  
-   
+   As the user continues typing, a drop-down (or list) of matching locations appears.
 
-6. **Server’s Random Behaviors** 
-   - **Random 500 Errors**: Sometimes the server returns a 500.  
+6. **Handle the Server’s Random Behaviors**
+   - **500 Errors**: Sometimes the server returns a 500.
    - **Slow Response Times**: Sometimes the server responds slowly.
-   
 
 ---
 
@@ -69,26 +69,26 @@ Awaze has acquired another travel company called **GlobalEscapes**. We have been
 
 1. **Clone this repository**:
    ```bash
-   git clone add-repo-here
+   git clone git@github.com:awazevr/front-end-technical-interview-task.git
    ```
 2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-
 ### Running the Project
 
 **Start the project** (in the root folder):
-   ```bash
-   npm run dev
-   ```
-   This runs the React app on **http://localhost:3000** and the Server on  **http://localhost:5000**
 
+```bash
+npm run dev
+```
+
+This runs the React app on **http://localhost:3000** and the Server on **http://localhost:5000**
 
 ### Verifying Connectivity
 
-- Open `http://localhost:3000` in your browser.
+- Open `http://localhost:5173` in your browser.
 - Type in the input box—once you type **3 characters**, the client should call `http://localhost:5000/api/location?term=<input>` to get matching results.
 
 ---
@@ -103,8 +103,9 @@ Awaze has acquired another travel company called **GlobalEscapes**. We have been
 
 3. **Filter out duplicates** in the results before displaying them.
 
-4. **Error Handling**  
-   - Random server 500 errors.  
+4. **Error Handling**
+
+   - Random server 500 errors.
    - Potential slow responses—your UI might need to indicate loading or handle a potential timeout scenario.
 
 5. **Display** the final results in a **drop-down** or something similar (e.g., a UL/LI list).

@@ -5,7 +5,6 @@ import FreeTextInput from './FreeTextInput';
 
 describe('FreeTextInput', () => {
   beforeEach(() => {
-    // Mock fetch globally
     global.fetch = jest.fn();
   });
 
@@ -26,7 +25,7 @@ describe('FreeTextInput', () => {
     fireEvent.keyDown(inputElement, { key: ' ', charCode: 32 });
     fireEvent.keyDown(inputElement, { key: 'z', charCode: 122 });
     fireEvent.change(inputElement, { target: { value: 'a z' } });
-    
+
     expect(inputElement).toHaveValue('a z');
   });
 
@@ -60,7 +59,9 @@ describe('FreeTextInput', () => {
   });
 
   it('handles fetch failure gracefully', async () => {
-    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+    const consoleErrorSpy = jest
+      .spyOn(console, 'error')
+      .mockImplementation(() => {});
     // @ts-ignore
     global.fetch.mockRejectedValueOnce(new Error('Network Error'));
 
@@ -69,7 +70,10 @@ describe('FreeTextInput', () => {
     fireEvent.change(inputElement, { target: { value: 'abc' } });
 
     await screen.findByPlaceholderText(/type to search/i);
-    expect(consoleErrorSpy).toHaveBeenCalledWith('Error fetching search data:', expect.any(Error));
+    expect(consoleErrorSpy).toHaveBeenCalledWith(
+      'Error fetching search data:',
+      expect.any(Error)
+    );
     consoleErrorSpy.mockRestore();
   });
 });

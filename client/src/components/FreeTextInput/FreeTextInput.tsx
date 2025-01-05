@@ -7,7 +7,7 @@ const FreeTextInput: React.FC = () => {
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     const char = event.key;
 
-     if (!/[a-z\s]/i.test(char) && char.length === 1) {
+    if (!/[a-z\s]/i.test(char) && char.length === 1) {
       event.preventDefault();
     }
 
