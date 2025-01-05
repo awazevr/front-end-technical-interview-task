@@ -1,0 +1,17 @@
+
+
+
+  .search-container {
+    width: 80%;            /* Search box container is 80% of the hero's width */
+    max-width: 600px;      /* Prevent it from getting too wide on large screens */
+    margin: 0 auto;        /* Centers within the hero container */
+  }
+  
+  /* Search input styling */
+  .search-input {
+    width: 100%;           /* Take up the full width of the .search container */
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
