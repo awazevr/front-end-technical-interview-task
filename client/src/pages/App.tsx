@@ -1,5 +1,5 @@
 import Navigation from '../components/Navigation/Navigation';
-import FreeTextInput from '../components/FreeTextInput/FreeTextInput';
+import LocationFinder from '../components/LocationFinder/LocationFinder';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
       <Navigation />
       <div className="hero">
-        <FreeTextInput />
+        <LocationFinder />
       </div>
 
       <div className="main-content">
