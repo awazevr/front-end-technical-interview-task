@@ -6,7 +6,7 @@ Welcome to the Awaze Front-End Coding exercise! This project is a small-scale ap
 
 ## The Brief
 
-We’ve recently acquired a global holiday company called **GlobalEscapes**, renowned for its unique, off-the-beaten-track travel experiences. To support this acquisition, we’ve been tasked with building a basic website that allows users to search for locations by integrating with a third-party `Location API`, which is know for it's instability and often slow response times.
+We’ve recently acquired a global holiday company called **GlobalEscapes**, renowned for its unique, off-the-beaten-track travel experiences. To support this acquisition, we’ve been tasked with building a basic website that allows users to search for locations by integrating with a third-party `Location API`, which is know for it's instability and often slow response times. We need to get something live, that is functional in the next hour.
 
 > [!NOTE]
 > For this exercise, the 3rd-party Location API is emulated within the **server** folder. This folder is off-limits for any coding changes. The emulation replicates real-world scenarios, including random errors and delayed response times, to simulate the challenges of working with external APIs.
@@ -53,24 +53,6 @@ We’ve recently acquired a global holiday company called **GlobalEscapes**, ren
    ```
 
 This runs the React app on **http://localhost:5173** and the Server on **http://localhost:5000**
-
----
-
-## Additional Challenges (Optional Ideas)
-
-If you want to expand on this assignment or test additional skills, here are some optional features you could introduce:
-
-1. **Client-Side Caching**  
-   Cache previously fetched search results so that typing the same term again returns instantly without hitting the API.
-
-2. **Debouncing**  
-   Instead of calling the API on every keyDown, implement **debouncing**. For example, only call the API if the user stops typing for ~300 milliseconds, but still respect the “at least 3 characters” rule.
-
-3. **Pagination**  
-   If the location list is large, you could implement pagination or infinite scrolling in the drop-down.
-
-4. **Accessibility**  
-   Ensure the search input and the drop-down are accessible (keyboard navigation, screen reader-friendly, ARIA roles, etc.).
 
 ---
 
