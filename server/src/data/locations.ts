@@ -5,10 +5,16 @@ interface Location {
 
 export const locations: Location[] = [
   { id: 1, name: 'Manchester' },
+  { id: 1, name: 'Manchester' },
+  { id: 2, name: 'Macclesfield' },
   { id: 2, name: 'Macclesfield' },
   { id: 3, name: 'Madrid' },
+  { id: 3, name: 'Madrid' },
+  { id: 4, name: 'Melbourne' },
   { id: 4, name: 'Melbourne' },
   { id: 5, name: 'Munich' },
+  { id: 5, name: 'Munich' },
+  { id: 6, name: 'Moscow' },
   { id: 6, name: 'Moscow' },
   { id: 7, name: 'Montreal' },
   { id: 8, name: 'Miami' },
@@ -103,5 +109,5 @@ export const locations: Location[] = [
   { id: 97, name: 'Salzburg' },
   { id: 98, name: 'Sarajevo' },
   { id: 99, name: 'San Salvador' },
-  { id: 100, name: 'St. Louis' }
+  { id: 100, name: 'St Louis' },
 ];

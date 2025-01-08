@@ -1,7 +1,7 @@
-
 /** @type {import('ts-jest').InitialOptionsTsJest} */
 module.exports = {
   preset: 'ts-jest',
+  verbose: true,
   testEnvironment: 'jest-environment-jsdom',
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',

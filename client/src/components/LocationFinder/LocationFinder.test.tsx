@@ -2,7 +2,7 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import LocationFinder from './LocationFinder';
 
-describe('LocationFinder', () => {
+describe('<LocationFinder />', () => {
   beforeEach(() => {
     global.fetch = jest.fn();
   });
@@ -23,9 +23,9 @@ describe('LocationFinder', () => {
         json: async () => [{ id: 1, name: 'Manchester' }],
       });
 
-      const inputElement = setup();
+      const LocationFinder = setup();
 
-      fireEvent.change(inputElement, { target: { value: 'man' } });
+      fireEvent.change(LocationFinder, { target: { value: 'man' } });
 
       await waitFor(() => {
         expect(global.fetch).toHaveBeenCalledTimes(1);
