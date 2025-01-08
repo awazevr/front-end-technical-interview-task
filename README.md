@@ -8,6 +8,9 @@ Welcome to the Awaze Front-End Coding exercise! This project is a small-scale ap
 
 We’ve recently acquired a global holiday company called **GlobalEscapes**, renowned for its unique, off-the-beaten-track travel experiences. To support this acquisition, we’ve been tasked with building a basic website that allows users to search for locations by integrating with a third-party `Location API`, which is know for it's instability and often slow response times.
 
+> [!NOTE]
+> For this exercise, the 3rd-party Location API is emulated within the **server** folder. This folder is off-limits for any coding changes. The emulation replicates real-world scenarios, including random errors and delayed response times, to simulate the challenges of working with external APIs.
+
 ### Requirements:
 
 1. **Free Text Search Input**  
