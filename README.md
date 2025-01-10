@@ -32,6 +32,9 @@ We’ve recently acquired a global holiday company called **GlobalEscapes**, ren
 5. **Highlight Matching Text**  
    When displaying results, highlight the matching portion of the text (e.g. If the term passed is `foo` highlight “foo” in “foobar”).
 
+> [!NOTE]
+> Completing all the tasks is not the goal of this exercise. Instead, we encourage you to focus on `quality over quantity`. This includes writing clean, maintainable code, demonstrating your thought process, and showcasing how you approach problem-solving. It's better to complete a few tasks well than to rush through everything.
+
 ## Getting Started
 
 1. **Clone this repository**:
@@ -62,13 +65,10 @@ This runs the React app on **http://localhost:5173** and the Server on **http://
   Is your code clean, modular, and easy to follow?
 
 - **Correctness**  
-  Does the search functionality work per the requirements (3rd keypress, deduplicated results)?
+  Does the search functionality work per the requirements?
 
 - **Error Handling**  
   How gracefully do you handle server errors and slow responses?
-
-- **UI/UX**  
-  Is the interface intuitive? Does the user know when the app is loading or if an error occurred?
 
 ---
 
