@@ -33,7 +33,7 @@ We’ve recently acquired a global holiday company called **GlobalEscapes**, ren
    When displaying results, highlight the matching portion of the text (e.g. If the term passed is `foo` highlight “foo” in “foobar”).
 
 > [!NOTE]
-> Completing all the tasks is not the goal of this exercise. Instead, we encourage you to focus on `quality over quantity`. This includes writing clean, maintainable code, demonstrating your thought process, and showcasing how you approach problem-solving. It's better to complete a few tasks well than to rush through everything.
+> Completing all the tasks is not the goal of this exercise. Instead, we encourage you to focus on **quality over quantity**. This includes writing clean, maintainable code, demonstrating your thought process, and showcasing how you approach problem-solving. It's better to complete a few tasks well than to rush through everything.
 
 ## Getting Started
 
