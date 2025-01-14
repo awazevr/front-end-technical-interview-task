@@ -1,15 +1,11 @@
 import Navigation from '../components/Navigation/Navigation';
-import LocationFinder from '../components/LocationFinder/LocationFinder';
 import './App.css';
 
 function App() {
   return (
     <>
       <Navigation />
-      <div className="hero">
-        <LocationFinder />
-      </div>
-
+      <div className="hero"></div>
       <div className="main-content">
         <p className="lead">
           Your journey to <span>unforgettable experiences</span> begins here.
