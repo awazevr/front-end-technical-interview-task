@@ -13,23 +13,23 @@ We’ve recently acquired a global holiday company called **GlobalEscapes**, ren
 
 ### Requirements:
 
-1. **Free Text Search Input**  
+1. **Free Text Search Input**
    Add a text input that allows users to type a location. As they type, a drop-down list of available locations should appear. The text input should be placed within the Hero section, positioned at the center, and centrally aligned.
 
-2. **Delayed API Calls**  
+2. **Delayed API Calls**
    The location API should only be queried **after** the user has typed **three or more characters**. From the **3rd keypress** (and beyond), the front end will send the current search term as a query parameter `term` to the API:
 
    ```bash
-   GET /api/location?term=<userInput>
+   curl "http://localhost:3000/api/locations?term=<USER_INPUT>"
    ```
 
-3. **De-duplication**  
+3. **De-duplication**
    The front end must **remove any duplicate** locations before displaying them.
 
-4. **Display a Drop-Down**  
+4. **Display a Drop-Down**
    As the user is typing, display the results in a drop-down or something similar (e.g. a UL/LI list).
 
-5. **Highlight Matching Text**  
+5. **Highlight Matching Text**
    When displaying results, highlight the matching portion of the text (e.g. If the term passed is `foo` highlight “foo” in “foobar”).
 
 > [!NOTE]
@@ -43,13 +43,17 @@ We’ve recently acquired a global holiday company called **GlobalEscapes**, ren
    git clone git@github.com:awazevr/front-end-technical-interview-task.git
    ```
 
-2. **Install dependencies**:
+2. **Make sure you have Node.js V18 minimum installed or NVM**:
+
+   If you have an older version of Node.js or don't have NVM you can follow the instructions to install quickly [here](https://nodejs.org/en/download).
+
+3. **Install dependencies**:
 
    ```bash
-   npm install
+   npm ci
    ```
 
-3. **Start the project** (in the root folder):
+4. **Start the project** (in the root folder):
 
    ```bash
    npm run dev
@@ -61,16 +65,16 @@ This runs the React app on **http://localhost:5173** and the Server on **http://
 
 ## Evaluation Criteria
 
-- **Code Readability & Organization**  
+- **Code Readability & Organization**
   Is your code clean, modular, and easy to follow?
 
-- **Correctness**  
+- **Correctness**
   Does the search functionality work per the requirements?
 
-- **Error Handling**  
+- **Error Handling**
   How gracefully do you handle server errors and slow responses?
 
-- **Usage of AI tool**  
+- **Usage of AI tool**
   While we do not discourage the use of AI tools, such as GitHub Copilot, in your day-to-day development work, we kindly ask that you refrain from using them during this exercise. Our goal is to evaluate your technical capabilities without assistance, so please complete the task using your own knowledge and skills.
 
 ---
