@@ -43,13 +43,17 @@ We’ve recently acquired a global holiday company called **GlobalEscapes**, ren
    git clone git@github.com:awazevr/front-end-technical-interview-task.git
    ```
 
-2. **Install dependencies**:
+2. **Make sure you have Node.js V18 minimum installed or NVM**:
+
+   If you have an older version of Node.js or don't have NVM you can follow the instructions to install quickly [here](https://nodejs.org/en/download).
+
+3. **Install dependencies**:
 
    ```bash
-   npm install
+   npm ci
    ```
 
-3. **Start the project** (in the root folder):
+4. **Start the project** (in the root folder):
 
    ```bash
    npm run dev
