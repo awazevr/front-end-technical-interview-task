@@ -63,22 +63,6 @@ This runs the React app on **http://localhost:5173** and the Server on **http://
 
 ---
 
-## Evaluation Criteria
-
-- **Code Readability & Organization**
-  Is your code clean, modular, and easy to follow?
-
-- **Correctness**
-  Does the search functionality work per the requirements?
-
-- **Error Handling**
-  How gracefully do you handle server errors and slow responses?
-
-- **Usage of AI tool**
-  While we do not discourage the use of AI tools, such as GitHub Copilot, in your day-to-day development work, we kindly ask that you refrain from using them during this exercise. Our goal is to evaluate your technical capabilities without assistance, so please complete the task using your own knowledge and skills.
-
----
-
 ## Conclusion
 
 We look forward to seeing how you approach this task. If you have any questions, don’t hesitate to ask.
