@@ -14,7 +14,7 @@ We’ve recently acquired a global holiday company called **GlobalEscapes**, ren
 ### Requirements:
 
 1. **Free Text Search Input**
-   Add a text input that allows users to type a location. As they type, a drop-down list of available locations should appear. The text input should be placed within the Hero section, positioned at the center, and centrally aligned.
+   Add a text input that allows users to type a location. As they type, we should see API requests being sent with the users search term. The text input should be placed within the Hero section, positioned at the center, and centrally aligned.
 
 2. **Delayed API Calls**
    The location API should only be queried **after** the user has typed **three or more characters**. From the **3rd keypress** (and beyond), the front end will send the current search term as a query parameter `term` to the API:
